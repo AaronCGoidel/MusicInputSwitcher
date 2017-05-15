@@ -29,7 +29,7 @@ const App = (props) => (<div>
   <a className="btn blue" onClick={e => sendSelection(10)}>Bluetooth</a>
   <a className="btn red" onClick={e => sendSelection(20)}>Radio</a>
   <a className="btn green" onClick={e => sendSelection(30)}>Vinyl</a>
-  <a className="btn yellow" onClick={e => sendSelection(40)}>Guitar</a>
+  <a className="btn purple" onClick={e => sendSelection(40)}>Guitar</a>
 </div>
 </body>
 </div>
