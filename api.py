@@ -9,6 +9,7 @@ class ERRORS():
     BAD_REQ = ('{"error":"Bad request"})', 400)
     BAD_AUTH = ('{"error":"Bad authentication"}', 400)
 
+
 # test endpoint
 @api.route("/test", methods=["POST"])
 def test(req=None):
