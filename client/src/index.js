@@ -15,3 +15,6 @@ ReactDOM.render(
         </Router>,
   document.getElementById('root')
 );
+
+
+fetch("/api/setup", {method:"POST"})
