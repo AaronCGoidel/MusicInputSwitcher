@@ -26,7 +26,7 @@ const App = (props) => (<div>
 <body>
 <h1>Music Input Switcher</h1>
 <div id="buttons">
-  <a className="btn blue" onClick={e => sendSelection(10)}>Bluetooth</a>
+  <a className="btn blue animated-button sandy-three" onClick={e => sendSelection(10)}>Bluetooth</a>
   <a className="btn red" onClick={e => sendSelection(20)}>Radio</a>
   <a className="btn green" onClick={e => sendSelection(30)}>Vinyl</a>
   <a className="btn purple" onClick={e => sendSelection(40)}>Guitar</a>
