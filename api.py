@@ -20,11 +20,7 @@ def pulse(pin):
     time.sleep(0.1)
     GPIO.output(pin, GPIO.HIGH)
 
-pinList = [4, 17, 27, 22]
-def setup():
-    for pinNum in pinList:
-        GPIO.setup(pinNum, GPIO.OUT)
-        GPIO.output(pinNum, GPIO.HIGH)
+
 
 
 
@@ -33,6 +29,16 @@ def setup():
 def test(req=None):
     if req is None: req = request.json
     return jsonify(req)
+
+
+@api.route("/setup", methods=["POST"])
+def setup():
+    pinList = [4, 17, 27, 22]
+    for pinNum in pinList:
+        GPIO.setup(pinNum, GPIO.OUT)
+        GPIO.output(pinNum, GPIO.HIGH)
+    return jsonify({"Done":pinList})
+
 
 
 # get input and activate the right pin
