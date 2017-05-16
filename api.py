@@ -37,6 +37,7 @@ def setup():
     for pinNum in pinList:
         GPIO.setup(pinNum, GPIO.OUT)
         GPIO.output(pinNum, GPIO.HIGH)
+    print("[DEBUG]: DONE SETUP")
     return jsonify({"Done":pinList})
 
 
